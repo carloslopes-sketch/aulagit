@@ -1,4 +1,4 @@
-def origens_produtos (1):
+def origens_produtos ():
     print("--- 4. CÓDIGO DE ORIGEM (MATCH/CASE) ---")
     try:
         codigo = int(input("Digite o código de origem (inteiro, ex: 7, 15 ou 90): "))

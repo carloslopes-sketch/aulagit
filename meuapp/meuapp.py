@@ -1,7 +1,7 @@
 import json
 import datetime
 from enum import Enum
-from typing import List, Dict, Any
+from typing import Dict
 import streamlit as st
 import pandas as pd
 
@@ -28,22 +28,29 @@ class AppTreinamentoStreamlit:
         self.carregar_dados()
     
     def carregar_dados(self):
+        """Carrega os dados dos usuários do arquivo JSON"""
         try:
-            with open(self.arquivo_dados, 'r') as f:
+            with open(self.arquivo_dados, 'r', encoding='utf-8') as f:
                 dados = json.load(f)
-                st.session_state.usuarios = dados.get('usuarios', [])
-        except FileNotFoundError:
-            st.session_state.usuarios = []
+                if 'usuarios' not in st.session_state:
+                    st.session_state.usuarios = dados.get('usuarios', [])
+        except (FileNotFoundError, json.JSONDecodeError):
+            if 'usuarios' not in st.session_state:
+                st.session_state.usuarios = []
     
     def salvar_dados(self):
+        """Salva os dados dos usuários no arquivo JSON"""
         dados = {'usuarios': st.session_state.usuarios}
-        with open(self.arquivo_dados, 'w') as f:
-            json.dump(dados, f, indent=2)
+        try:
+            with open(self.arquivo_dados, 'w', encoding='utf-8') as f:
+                json.dump(dados, f, indent=2, ensure_ascii=False)
+        except Exception as e:
+            st.error(f"Erro ao salvar dados: {e}")
     
     def pagina_cadastro_usuario(self):
         st.header("📝 Cadastro de Usuário")
         
-        if len(st.session_state.usuarios) >= 5:
+        if len(st.session_state.get('usuarios', [])) >= 5:
             st.warning("Limite de 5 usuários atingido!")
             return
         
@@ -94,9 +101,11 @@ class AppTreinamentoStreamlit:
                 st.balloons()
     
     def calcular_imc(self, peso, altura):
+        """Calcula o IMC"""
         return peso / (altura ** 2)
     
     def determinar_divisao_treino(self, nivel: Nivel, objetivo: Objetivo) -> DivisaoTreino:
+        """Determina a divisão de treino baseada no nível e objetivo"""
         if nivel == Nivel.INICIANTE:
             return DivisaoTreino.AB
         elif nivel == Nivel.INTERMEDIARIO:
@@ -108,6 +117,7 @@ class AppTreinamentoStreamlit:
                 return DivisaoTreino.ABCDE
     
     def gerar_treino_massa(self, usuario: Dict) -> Dict:
+        """Gera treino para ganho de massa muscular"""
         nivel = Nivel(usuario['nivel'])
         ciclo = usuario['ciclo_atual']
         divisao = self.determinar_divisao_treino(nivel, Objetivo.GANHAR_MASSA)
@@ -159,33 +169,21 @@ class AppTreinamentoStreamlit:
             }
         }
         
-        if divisao not in exercicios_base:
-            divisao = DivisaoTreino.ABC
+        # Usar ABC como fallback se divisão não estiver definida
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.ABC])
         
         treino = {
             'divisao': divisao.value,
             'dias_semana': 3 if divisao == DivisaoTreino.AB else 4,
             'cardio': '2x por semana - 20min moderado' if ciclo % 2 == 0 else '1x por semana - 15min leve',
-            'sessoes': exercicios_base[divisao]
+            'sessoes': treino_base
         }
-        
-        if ciclo % 2 == 0:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'Progressiva' in exercicio['carga']:
-                        exercicio['repeticoes'] = '12-15'
-                        exercicio['series'] += 1
-        else:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'Progressiva' in exercicio['carga']:
-                        exercicio['repeticoes'] = '6-8'
         
         return treino
     
     def gerar_treino_perda_peso(self, usuario: Dict) -> Dict:
+        """Gera treino para perda de peso"""
         nivel = Nivel(usuario['nivel'])
-        ciclo = usuario['ciclo_atual']
         divisao = self.determinar_divisao_treino(nivel, Objetivo.PERDER_PESO)
         
         exercicios_base = {
@@ -209,29 +207,20 @@ class AppTreinamentoStreamlit:
             }
         }
         
-        if divisao not in exercicios_base:
-            divisao = DivisaoTreino.AB
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 4 if divisao == DivisaoTreino.AB else 5,
+            'dias_semana': 4,
             'cardio_adicional': '1-2x por semana - 30min moderado',
-            'sessoes': exercicios_base[divisao]
+            'sessoes': treino_base
         }
-        
-        if ciclo % 3 == 0:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'descanso' in exercicio:
-                        exercicio['descanso'] = '15s'
-                    if 'HIIT' in exercicio['nome']:
-                        exercicio['series'] = 10
         
         return treino
     
     def gerar_treino_corrida(self, usuario: Dict) -> Dict:
+        """Gera treino para performance na corrida"""
         nivel = Nivel(usuario['nivel'])
-        ciclo = usuario['ciclo_atual']
         divisao = self.determinar_divisao_treino(nivel, Objetivo.PERFORMANCE_CORRIDA)
         
         exercicios_base = {
@@ -255,29 +244,19 @@ class AppTreinamentoStreamlit:
             }
         }
         
-        if divisao not in exercicios_base:
-            divisao = DivisaoTreino.AB
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 4 if divisao == DivisaoTreino.AB else 6,
-            'sessoes': exercicios_base[divisao]
+            'dias_semana': 4,
+            'sessoes': treino_base
         }
-        
-        if ciclo % 3 == 0:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'distancia' in exercicio:
-                        if nivel == Nivel.INICIANTE:
-                            exercicio['distancia'] = '6km'
-                        else:
-                            exercicio['distancia'] = '16km'
         
         return treino
     
     def gerar_treino_futebol(self, usuario: Dict) -> Dict:
+        """Gera treino para performance no futebol"""
         nivel = Nivel(usuario['nivel'])
-        ciclo = usuario['ciclo_atual']
         divisao = self.determinar_divisao_treino(nivel, Objetivo.PERFORMANCE_FUTEBOL)
         
         exercicios_base = {
@@ -301,31 +280,19 @@ class AppTreinamentoStreamlit:
             }
         }
         
-        if divisao not in exercicios_base:
-            divisao = DivisaoTreino.AB
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 3 if divisao == DivisaoTreino.AB else 4,
+            'dias_semana': 3,
             'observacoes': 'Integrar com treinos de futebol específicos',
-            'sessoes': exercicios_base[divisao]
+            'sessoes': treino_base
         }
-        
-        if ciclo % 2 == 0:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'carga' in exercicio and exercicio['carga'] == 'Pesada':
-                        exercicio['repeticoes'] = '8-12'
-                        exercicio['series'] = 4
-        else:
-            for dia, exercicios in treino['sessoes'].items():
-                for exercicio in exercicios:
-                    if 'carga' in exercicio and exercicio['carga'] == 'Pesada':
-                        exercicio['repeticoes'] = '3-5'
         
         return treino
     
     def gerar_treino_usuario(self, usuario: Dict) -> Dict:
+        """Gera o treino baseado no objetivo do usuário"""
         objetivo = Objetivo(usuario['objetivo'])
         
         treinos = {
@@ -337,36 +304,25 @@ class AppTreinamentoStreamlit:
         
         return treinos[objetivo](usuario)
     
-    def verificar_troca_ciclo(self, usuario: Dict) -> bool:
-        ultima_troca = datetime.datetime.fromisoformat(usuario['ultima_troca'])
-        dias_desde_troca = (datetime.datetime.now() - ultima_troca).days
-        return dias_desde_troca >= 21
-    
-    def atualizar_ciclo(self, usuario_id: int):
-        for usuario in st.session_state.usuarios:
-            if usuario['id'] == usuario_id:
-                if self.verificar_troca_ciclo(usuario):
-                    usuario['ciclo_atual'] += 1
-                    usuario['ultima_troca'] = datetime.datetime.now().isoformat()
-                    self.salvar_dados()
-                    st.success(f"Ciclo atualizado para {usuario['nome']}! Novo ciclo: {usuario['ciclo_atual']}")
-                break
-    
     def pagina_listar_usuarios(self):
         st.header("👥 Usuários Cadastrados")
         
-        if not st.session_state.usuarios:
+        usuarios = st.session_state.get('usuarios', [])
+        if not usuarios:
             st.info("Nenhum usuário cadastrado ainda.")
             return
         
+        # Criar DataFrame para exibição
         dados_tabela = []
-        for usuario in st.session_state.usuarios:
+        for usuario in usuarios:
+            imc = self.calcular_imc(usuario['peso'], usuario['altura'])
             dados_tabela.append({
                 'ID': usuario['id'],
                 'Nome': usuario['nome'],
                 'Idade': usuario['idade'],
                 'Peso': f"{usuario['peso']}kg",
                 'Altura': f"{usuario['altura']}m",
+                'IMC': f"{imc:.1f}",
                 'Nível': usuario['nivel'].title(),
                 'Objetivo': usuario['objetivo'].replace('_', ' ').title(),
                 'Ciclo': usuario['ciclo_atual']
@@ -378,92 +334,75 @@ class AppTreinamentoStreamlit:
         # Estatísticas
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.metric("Total de Usuários", len(st.session_state.usuarios))
+            st.metric("Total de Usuários", len(usuarios))
         with col2:
-            st.metric("Limite Disponível", 5 - len(st.session_state.usuarios))
+            st.metric("Limite Disponível", 5 - len(usuarios))
         with col3:
-            if st.session_state.usuarios:
-                imc_medio = sum(self.calcular_imc(u['peso'], u['altura']) for u in st.session_state.usuarios) / len(st.session_state.usuarios)
-                st.metric("IMC Médio", f"{imc_medio:.1f}")
+            if usuarios:
+                idade_media = sum(u['idade'] for u in usuarios) / len(usuarios)
+                st.metric("Idade Média", f"{idade_media:.1f}")
     
     def pagina_gerar_treino(self):
         st.header("💪 Gerar Treino Personalizado")
         
-        if not st.session_state.usuarios:
+        usuarios = st.session_state.get('usuarios', [])
+        if not usuarios:
             st.warning("Cadastre pelo menos um usuário primeiro!")
             return
         
-        usuarios_options = {f"{u['id']} - {u['nome']}": u['id'] for u in st.session_state.usuarios}
+        # Selecionar usuário
         usuario_selecionado = st.selectbox(
             "Selecione o usuário:",
-            options=list(usuarios_options.keys())
+            options=usuarios,
+            format_func=lambda u: f"{u['id']} - {u['nome']} ({u['objetivo'].replace('_', ' ').title()})"
         )
         
-        if usuario_selecionado:
-            usuario_id = usuarios_options[usuario_selecionado]
-            usuario = next((u for u in st.session_state.usuarios if u['id'] == usuario_id), None)
+        if usuario_selecionado and st.button("Gerar Treino", type="primary"):
+            # Informações do usuário
+            st.subheader(f"📊 Informações de {usuario_selecionado['nome']}")
             
-            if usuario and st.button("Gerar Treino", type="primary"):
-                self.atualizar_ciclo(usuario_id)
-                
-                # Informações do usuário
-                st.subheader(f"📊 Informações de {usuario['nome']}")
-                col1, col2, col3, col4 = st.columns(4)
-                
-                with col1:
-                    st.metric("Idade", usuario['idade'])
-                with col2:
-                    st.metric("Peso", f"{usuario['peso']}kg")
-                with col3:
-                    st.metric("Altura", f"{usuario['altura']}m")
-                with col4:
-                    imc = self.calcular_imc(usuario['peso'], usuario['altura'])
-                    st.metric("IMC", f"{imc:.1f}")
-                
-                # Gerar treino
-                treino = self.gerar_treino_usuario(usuario)
-                
-                # Informações do treino
-                st.subheader("🎯 Plano de Treino")
-                col1, col2 = st.columns(2)
-                
-                with col1:
-                    st.info(f"**Divisão:** {treino['divisao']}")
-                    st.info(f"**Dias na semana:** {treino['dias_semana']}")
-                
-                with col2:
-                    st.info(f"**Ciclo atual:** {usuario['ciclo_atual']}")
-                    if 'cardio' in treino:
-                        st.info(f"**Cardio:** {treino['cardio']}")
-                    if 'cardio_adicional' in treino:
-                        st.info(f"**Cardio adicional:** {treino['cardio_adicional']}")
-                
-                if 'observacoes' in treino:
-                    st.warning(f"**Observações:** {treino['observacoes']}")
-                
-                # Sessões de treino
-                for dia, exercicios in treino['sessoes'].items():
-                    with st.expander(f"📅 {dia}", expanded=True):
-                        for i, exercicio in enumerate(exercicios, 1):
-                            with st.container():
-                                col1, col2 = st.columns([3, 2])
-                                
-                                with col1:
-                                    st.write(f"**{i}. {exercicio['nome']}**")
-                                
-                                with col2:
-                                    detalhes = []
-                                    for key, value in exercicio.items():
-                                        if key != 'nome':
-                                            detalhes.append(f"**{key}:** {value}")
-                                    st.write(" | ".join(detalhes))
-                            
-                            st.divider()
+            col1, col2, col3, col4 = st.columns(4)
+            with col1:
+                st.metric("Idade", usuario_selecionado['idade'])
+            with col2:
+                st.metric("Peso", f"{usuario_selecionado['peso']}kg")
+            with col3:
+                st.metric("Altura", f"{usuario_selecionado['altura']}m")
+            with col4:
+                imc = self.calcular_imc(usuario_selecionado['peso'], usuario_selecionado['altura'])
+                st.metric("IMC", f"{imc:.1f}")
+            
+            # Gerar e exibir treino
+            treino = self.gerar_treino_usuario(usuario_selecionado)
+            
+            st.subheader("🎯 Plano de Treino")
+            
+            col1, col2 = st.columns(2)
+            with col1:
+                st.info(f"**Divisão:** {treino['divisao']}")
+                st.info(f"**Dias na semana:** {treino['dias_semana']}")
+            with col2:
+                st.info(f"**Ciclo atual:** {usuario_selecionado['ciclo_atual']}")
+                if 'cardio' in treino:
+                    st.info(f"**Cardio:** {treino['cardio']}")
+            
+            # Exibir sessões de treino
+            for dia, exercicios in treino['sessoes'].items():
+                with st.expander(f"📅 {dia}", expanded=True):
+                    for i, exercicio in enumerate(exercicios, 1):
+                        st.write(f"**{i}. {exercicio['nome']}**")
+                        detalhes = []
+                        for key, value in exercicio.items():
+                            if key != 'nome':
+                                detalhes.append(f"**{key}:** {value}")
+                        st.write(" | ".join(detalhes))
+                        st.divider()
     
     def pagina_dashboard(self):
         st.header("📈 Dashboard de Progresso")
         
-        if not st.session_state.usuarios:
+        usuarios = st.session_state.get('usuarios', [])
+        if not usuarios:
             st.info("Nenhum dado disponível. Cadastre usuários primeiro.")
             return
         
@@ -471,68 +410,41 @@ class AppTreinamentoStreamlit:
         col1, col2, col3, col4 = st.columns(4)
         
         with col1:
-            total_usuarios = len(st.session_state.usuarios)
-            st.metric("Total de Usuários", total_usuarios)
+            st.metric("Total de Usuários", len(usuarios))
         
         with col2:
-            objetivos = [u['objetivo'] for u in st.session_state.usuarios]
+            objetivos = [u['objetivo'] for u in usuarios]
             objetivo_mais_comum = max(set(objetivos), key=objetivos.count)
             st.metric("Objetivo Mais Comum", objetivo_mais_comum.replace('_', ' ').title())
         
         with col3:
-            niveis = [u['nivel'] for u in st.session_state.usuarios]
+            niveis = [u['nivel'] for u in usuarios]
             nivel_mais_comum = max(set(niveis), key=niveis.count)
             st.metric("Nível Mais Comum", nivel_mais_comum.title())
         
         with col4:
-            ciclos_totais = sum(u['ciclo_atual'] for u in st.session_state.usuarios)
+            ciclos_totais = sum(u['ciclo_atual'] for u in usuarios)
             st.metric("Ciclos Totais", ciclos_totais)
         
-        # Gráfico de distribuição por objetivo
+        # Distribuição por objetivo
         st.subheader("Distribuição por Objetivo")
-        objetivos_df = pd.DataFrame([u['objetivo'] for u in st.session_state.usuarios], columns=['Objetivo'])
+        objetivos_df = pd.DataFrame([u['objetivo'] for u in usuarios], columns=['Objetivo'])
         contagem_objetivos = objetivos_df['Objetivo'].value_counts()
         st.bar_chart(contagem_objetivos)
-        
-        # Tabela de IMC
-        st.subheader("Análise de IMC")
-        dados_imc = []
-        for usuario in st.session_state.usuarios:
-            imc = self.calcular_imc(usuario['peso'], usuario['altura'])
-            classificacao = self.classificar_imc(imc)
-            dados_imc.append({
-                'Nome': usuario['nome'],
-                'IMC': f"{imc:.1f}",
-                'Classificação': classificacao,
-                'Peso': f"{usuario['peso']}kg",
-                'Altura': f"{usuario['altura']}m"
-            })
-        
-        st.dataframe(pd.DataFrame(dados_imc), use_container_width=True)
-    
-    def classificar_imc(self, imc):
-        if imc < 18.5:
-            return "Abaixo do peso"
-        elif imc < 25:
-            return "Peso normal"
-        elif imc < 30:
-            return "Sobrepeso"
-        else:
-            return "Obesidade"
     
     def executar(self):
+        # Configuração da página
         st.set_page_config(
             page_title="App de Treinamento Personalizado",
             page_icon="💪",
-            layout="wide",
-            initial_sidebar_state="expanded"
+            layout="wide"
         )
         
         # Inicializar session state se necessário
         if 'usuarios' not in st.session_state:
             st.session_state.usuarios = []
         
-        # Sidebar
+        # Sidebar com navegação
         st.sidebar.title("💪 App de Treinamento")
         st.sidebar.markdown("---")
         
@@ -543,14 +455,14 @@ class AppTreinamentoStreamlit:
         
         st.sidebar.markdown("---")
         st.sidebar.info(
-            "**Desenvolvido para:**\n"
+            "**Sistema de Treinamento Personalizado**\n\n"
             "• Ganho de Massa Muscular\n"
             "• Perda de Peso\n"
             "• Performance na Corrida\n"
             "• Performance no Futebol"
         )
         
-        # Conteúdo principal
+        # Navegação entre páginas
         if pagina == "🏠 Dashboard":
             self.pagina_dashboard()
         elif pagina == "📝 Cadastrar Usuário":
@@ -560,6 +472,7 @@ class AppTreinamentoStreamlit:
         elif pagina == "💪 Gerar Treino":
             self.pagina_gerar_treino()
 
+# Executar o app
 if __name__ == "__main__":
     app = AppTreinamentoStreamlit()
     app.executar()

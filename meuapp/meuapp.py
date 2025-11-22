@@ -166,15 +166,84 @@ class AppTreinamentoStreamlit:
                     {'nome': 'Panturrilha em Pé', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'},
                     {'nome': 'Gêmeos Sentado', 'series': 4, 'repeticoes': '15-20', 'carga': 'Progressiva'}
                 ]
+            },
+            DivisaoTreino.ABCD: {
+                'A - Peito': [
+                    {'nome': 'Supino Reto com Barra', 'series': 4, 'repeticoes': '8-12', 'carga': 'Progressiva'},
+                    {'nome': 'Supino Inclinado com Halteres', 'series': 4, 'repeticoes': '10-12', 'carga': 'Média'},
+                    {'nome': 'Crucifixo Máquina', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Cross Over', 'series': 3, 'repeticoes': '15-20', 'carga': 'Leve'}
+                ],
+                'B - Costas': [
+                    {'nome': 'Barra Fixa', 'series': 4, 'repeticoes': '6-10', 'carga': 'Progressiva'},
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '8-12', 'carga': 'Pesada'},
+                    {'nome': 'Pull-down Frente', 'series': 3, 'repeticoes': '10-12', 'carga': 'Média'},
+                    {'nome': 'Remada Cavalinho', 'series': 3, 'repeticoes': '12-15', 'carga': 'Média'}
+                ],
+                'C - Ombros e Trapézio': [
+                    {'nome': 'Desenvolvimento Militar', 'series': 4, 'repeticoes': '8-12', 'carga': 'Progressiva'},
+                    {'nome': 'Elevação Lateral', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Elevação Frontal', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Encolhimento com Barra', 'series': 4, 'repeticoes': '12-15', 'carga': 'Média'}
+                ],
+                'D - Pernas': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '6-10', 'carga': 'Pesada'},
+                    {'nome': 'Leg Press 45°', 'series': 4, 'repeticoes': '10-15', 'carga': 'Progressiva'},
+                    {'nome': 'Cadeira Extensora', 'series': 4, 'repeticoes': '12-15', 'carga': 'Média'},
+                    {'nome': 'Mesa Flexora', 'series': 4, 'repeticoes': '12-15', 'carga': 'Média'},
+                    {'nome': 'Panturrilha em Pé', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'}
+                ]
+            },
+            DivisaoTreino.ABCDE: {
+                'A - Peito': [
+                    {'nome': 'Supino Reto com Barra', 'series': 4, 'repeticoes': '6-10', 'carga': 'Pesada'},
+                    {'nome': 'Supino Inclinado com Halteres', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Crucifixo Máquina', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Cross Over', 'series': 3, 'repeticoes': '15-20', 'carga': 'Leve'}
+                ],
+                'B - Costas': [
+                    {'nome': 'Barra Fixa', 'series': 4, 'repeticoes': '6-10', 'carga': 'Progressiva'},
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '8-12', 'carga': 'Pesada'},
+                    {'nome': 'Pull-down Frente', 'series': 3, 'repeticoes': '10-12', 'carga': 'Média'},
+                    {'nome': 'Remada Cavalinho', 'series': 3, 'repeticoes': '12-15', 'carga': 'Média'}
+                ],
+                'C - Ombros': [
+                    {'nome': 'Desenvolvimento Militar', 'series': 4, 'repeticoes': '8-12', 'carga': 'Progressiva'},
+                    {'nome': 'Elevação Lateral', 'series': 4, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Elevação Frontal', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Crucifixo Invertido', 'series': 3, 'repeticoes': '15-20', 'carga': 'Leve'}
+                ],
+                'D - Pernas': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '6-10', 'carga': 'Pesada'},
+                    {'nome': 'Leg Press 45°', 'series': 4, 'repeticoes': '10-15', 'carga': 'Progressiva'},
+                    {'nome': 'Cadeira Extensora', 'series': 4, 'repeticoes': '12-15', 'carga': 'Média'},
+                    {'nome': 'Mesa Flexora', 'series': 4, 'repeticoes': '12-15', 'carga': 'Média'},
+                    {'nome': 'Panturrilha em Pé', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'}
+                ],
+                'E - Braços': [
+                    {'nome': 'Rosca Direta', 'series': 4, 'repeticoes': '8-12', 'carga': 'Progressiva'},
+                    {'nome': 'Rosca Martelo', 'series': 3, 'repeticoes': '10-12', 'carga': 'Média'},
+                    {'nome': 'Rosca Scott', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Tríceps Francês', 'series': 4, 'repeticoes': '8-12', 'carga': 'Progressiva'},
+                    {'nome': 'Tríceps Corda', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'},
+                    {'nome': 'Tríceps Testa', 'series': 3, 'repeticoes': '12-15', 'carga': 'Leve'}
+                ]
             }
         }
         
-        # Usar ABC como fallback se divisão não estiver definida
         treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.ABC])
+        
+        # Definir dias na semana baseado na divisão
+        dias_semana_map = {
+            DivisaoTreino.AB: 3,
+            DivisaoTreino.ABC: 4,
+            DivisaoTreino.ABCD: 4,
+            DivisaoTreino.ABCDE: 5
+        }
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 3 if divisao == DivisaoTreino.AB else 4,
+            'dias_semana': dias_semana_map.get(divisao, 4),
             'cardio': '2x por semana - 20min moderado' if ciclo % 2 == 0 else '1x por semana - 15min leve',
             'sessoes': treino_base
         }
@@ -204,14 +273,69 @@ class AppTreinamentoStreamlit:
                     {'nome': 'Jumping Jacks', 'series': 4, 'repeticoes': '30s', 'descanso': '30s'},
                     {'nome': 'Cardio - Bicicleta', 'series': 1, 'duracao': '20min', 'intensidade': '75%'}
                 ]
+            },
+            DivisaoTreino.ABC: {
+                'A - Circuito Full Body 1': [
+                    {'nome': 'Supino Reto', 'series': 4, 'repeticoes': '12-15', 'descanso': '20s'},
+                    {'nome': 'Agachamento Livre', 'series': 4, 'repeticoes': '15-20', 'descanso': '20s'},
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '12-15', 'descanso': '20s'},
+                    {'nome': 'Burpees', 'series': 4, 'repeticoes': '10-12', 'descanso': '40s'},
+                    {'nome': 'HIIT - Esteira', 'series': 8, 'intervalo': '30s/30s', 'intensidade': '85%'}
+                ],
+                'B - Circuito Full Body 2': [
+                    {'nome': 'Desenvolvimento Militar', 'series': 4, 'repeticoes': '15-20', 'descanso': '20s'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '15-20', 'descanso': '20s'},
+                    {'nome': 'Pull-down Frente', 'series': 4, 'repeticoes': '15-20', 'descanso': '20s'},
+                    {'nome': 'Mountain Climbers', 'series': 4, 'repeticoes': '20s', 'descanso': '40s'},
+                    {'nome': 'HIIT - Bicicleta', 'series': 8, 'intervalo': '30s/30s', 'intensidade': '85%'}
+                ],
+                'C - Força + Cardio': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '8-12', 'descanso': '60s'},
+                    {'nome': 'Supino Reto', 'series': 5, 'repeticoes': '8-12', 'descanso': '60s'},
+                    {'nome': 'Remada Curvada', 'series': 5, 'repeticoes': '8-12', 'descanso': '60s'},
+                    {'nome': 'Cardio Contínuo', 'series': 1, 'duracao': '30min', 'intensidade': '70%'}
+                ]
+            },
+            DivisaoTreino.ABCD: {
+                'A - Superior + HIIT': [
+                    {'nome': 'Supino Reto', 'series': 4, 'repeticoes': '12-15', 'descanso': '30s'},
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '12-15', 'descanso': '30s'},
+                    {'nome': 'Desenvolvimento Militar', 'series': 3, 'repeticoes': '15-20', 'descanso': '30s'},
+                    {'nome': 'HIIT - Burpees', 'series': 5, 'repeticoes': '12', 'descanso': '45s'}
+                ],
+                'B - Inferior + HIIT': [
+                    {'nome': 'Agachamento Goblet', 'series': 4, 'repeticoes': '15-20', 'descanso': '30s'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '15-20', 'descanso': '30s'},
+                    {'nome': 'Afundos', 'series': 3, 'repeticoes': '12-15 cada', 'descanso': '30s'},
+                    {'nome': 'HIIT - Jump Squats', 'series': 5, 'repeticoes': '15', 'descanso': '45s'}
+                ],
+                'C - Core + Cardio': [
+                    {'nome': 'Prancha Abdominal', 'series': 4, 'tempo': '60s', 'descanso': '30s'},
+                    {'nome': 'Russian Twist', 'series': 3, 'repeticoes': '20', 'carga': 'Medicine Ball'},
+                    {'nome': 'Elevação de Pernas', 'series': 3, 'repeticoes': '15-20', 'carga': 'Corpo'},
+                    {'nome': 'Cardio - Natação', 'series': 1, 'duracao': '30min', 'intensidade': '75%'}
+                ],
+                'D - Full Body Circuit': [
+                    {'nome': 'Kettlebell Swing', 'series': 4, 'repeticoes': '20', 'descanso': '30s'},
+                    {'nome': 'Push Press', 'series': 4, 'repeticoes': '12-15', 'descanso': '30s'},
+                    {'nome': 'Box Jumps', 'series': 4, 'repeticoes': '10', 'descanso': '45s'},
+                    {'nome': 'Battle Ropes', 'series': 4, 'tempo': '30s', 'descanso': '30s'}
+                ]
             }
         }
         
-        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.ABC])
+        
+        # Definir dias na semana
+        dias_semana_map = {
+            DivisaoTreino.AB: 4,
+            DivisaoTreino.ABC: 5,
+            DivisaoTreino.ABCD: 6
+        }
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 4,
+            'dias_semana': dias_semana_map.get(divisao, 5),
             'cardio_adicional': '1-2x por semana - 30min moderado',
             'sessoes': treino_base
         }
@@ -241,14 +365,67 @@ class AppTreinamentoStreamlit:
                     {'nome': 'Mobilidade Quadril', 'series': 3, 'tempo': '30s cada', 'exercicios': 'Alongamentos'},
                     {'nome': 'TIRO - 400m', 'series': 6, 'descanso': '2min', 'ritmo': 'Rápido'}
                 ]
+            },
+            DivisaoTreino.ABC: {
+                'A - Força Inferior': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '6-10', 'carga': 'Pesada'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '10-12', 'carga': 'Progressiva'},
+                    {'nome': 'Stiff', 'series': 4, 'repeticoes': '10-12', 'carga': 'Média'},
+                    {'nome': 'Panturrilha Sentado', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'},
+                    {'nome': 'Abdominal Infra', 'series': 4, 'repeticoes': '15-20', 'carga': 'Corpo'}
+                ],
+                'B - Corrida Técnica': [
+                    {'nome': 'TIRO - 800m', 'series': 6, 'descanso': '90s', 'ritmo': 'Alto'},
+                    {'nome': 'Farlek', 'series': 1, 'duracao': '30min', 'variacao': '1min rápido/2min lento'},
+                    {'nome': 'Educativos de Corrida', 'series': 4, 'repeticoes': '50m', 'exercicios': 'Skiping, Anfersen'}
+                ],
+                'C - Superior + Core': [
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Desenvolvimento Militar', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Barra Fixa', 'series': 4, 'repeticoes': '6-10', 'carga': 'Progressiva'},
+                    {'nome': 'Prancha com Movimento', 'series': 4, 'tempo': '45s', 'variacao': 'Com rotação'},
+                    {'nome': 'Russian Twist', 'series': 3, 'repeticoes': '20', 'carga': 'Medicine Ball'}
+                ]
+            },
+            DivisaoTreino.ABCD: {
+                'A - Força Maxima': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '3-5', 'carga': 'Pesada'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '8-10', 'carga': 'Progressiva'},
+                    {'nome': 'Stiff', 'series': 4, 'repeticoes': '6-8', 'carga': 'Média'},
+                    {'nome': 'Panturrilha', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'}
+                ],
+                'B - Corrida Intervalada': [
+                    {'nome': 'TIRO - 1000m', 'series': 5, 'descanso': '3min', 'ritmo': 'Competição'},
+                    {'nome': 'Farlek Avançado', 'series': 1, 'duracao': '45min', 'variacao': '2min rápido/1min lento'},
+                    {'nome': 'Subidas', 'series': 6, 'distancia': '200m', 'inclinacao': '5%'}
+                ],
+                'C - Resistência Muscular': [
+                    {'nome': 'Agachamento Bulgaro', 'series': 4, 'repeticoes': '12-15 cada', 'carga': 'Média'},
+                    {'nome': 'Elevação Pélvica', 'series': 4, 'repeticoes': '15-20', 'carga': 'Progressiva'},
+                    {'nome': 'Afundos', 'series': 4, 'repeticoes': '12-15 cada', 'carga': 'Média'},
+                    {'nome': 'Cadeira Flexora', 'series': 4, 'repeticoes': '15-20', 'carga': 'Leve'}
+                ],
+                'D - Core + Mobilidade': [
+                    {'nome': 'Prancha Dinâmica', 'series': 4, 'tempo': '60s', 'variacao': 'Com toque nos ombros'},
+                    {'nome': 'Russian Twist', 'series': 4, 'repeticoes': '25', 'carga': 'Medicine Ball'},
+                    {'nome': 'Superman', 'series': 3, 'repeticoes': '15', 'carga': 'Corpo'},
+                    {'nome': 'Mobilidade Completa', 'series': 1, 'tempo': '20min', 'exercicios': 'Alongamentos dinâmicos'}
+                ]
             }
         }
         
-        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.ABC])
+        
+        # Definir dias na semana
+        dias_semana_map = {
+            DivisaoTreino.AB: 4,
+            DivisaoTreino.ABC: 6,
+            DivisaoTreino.ABCD: 6
+        }
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 4,
+            'dias_semana': dias_semana_map.get(divisao, 6),
             'sessoes': treino_base
         }
         
@@ -277,14 +454,72 @@ class AppTreinamentoStreamlit:
                     {'nome': 'Sprints - 20m', 'series': 6, 'descanso': '60s', 'intensidade': 'Máxima'},
                     {'nome': 'Shuttle Run', 'series': 4, 'descanso': '90s', 'distancia': '5-10-5'}
                 ]
+            },
+            DivisaoTreino.ABC: {
+                'A - Inferior + Potência': [
+                    {'nome': 'Agachamento Profundo', 'series': 5, 'repeticoes': '6-10', 'carga': 'Pesada'},
+                    {'nome': 'Agachamento Bulgaro', 'series': 4, 'repeticoes': '8-12 cada', 'carga': 'Média'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '10-15', 'carga': 'Progressiva'},
+                    {'nome': 'Pulo Caixa', 'series': 5, 'repeticoes': '8', 'altura': 'Progressiva'},
+                    {'nome': 'Panturrilha em Pé', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'},
+                    {'nome': 'Abdominal Canivete', 'series': 4, 'repeticoes': '15-20', 'carga': 'Corpo'}
+                ],
+                'B - Superior + Core': [
+                    {'nome': 'Remada Curvada', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Desenvolvimento Militar', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Barra Fixa', 'series': 4, 'repeticoes': '6-10', 'carga': 'Progressiva'},
+                    {'nome': 'Supino Reto', 'series': 4, 'repeticoes': '8-12', 'carga': 'Média'},
+                    {'nome': 'Prancha Lateral', 'series': 3, 'tempo': '45s cada', 'carga': 'Corpo'},
+                    {'nome': 'Rotação Russa', 'series': 4, 'repeticoes': '15 cada', 'carga': 'Medicine Ball'}
+                ],
+                'C - Potência + Velocidade': [
+                    {'nome': 'Power Clean', 'series': 5, 'repeticoes': '3-5', 'carga': 'Técnica'},
+                    {'nome': 'Afundos com Salto', 'series': 4, 'repeticoes': '8 cada', 'carga': 'Corpo'},
+                    {'nome': 'Sprints - 20m', 'series': 8, 'descanso': '60s', 'intensidade': 'Máxima'},
+                    {'nome': 'Shuttle Run', 'series': 6, 'descanso': '90s', 'distancia': '5-10-5'},
+                    {'nome': 'Pliometria - Polichinelos', 'series': 4, 'repeticoes': '20', 'carga': 'Corpo'}
+                ]
+            },
+            DivisaoTreino.ABCD: {
+                'A - Força Inferior': [
+                    {'nome': 'Agachamento Livre', 'series': 5, 'repeticoes': '3-5', 'carga': 'Pesada'},
+                    {'nome': 'Leg Press', 'series': 4, 'repeticoes': '6-8', 'carga': 'Progressiva'},
+                    {'nome': 'Stiff', 'series': 4, 'repeticoes': '6-8', 'carga': 'Média'},
+                    {'nome': 'Panturrilha', 'series': 5, 'repeticoes': '15-20', 'carga': 'Progressiva'}
+                ],
+                'B - Potência Explosiva': [
+                    {'nome': 'Power Clean', 'series': 5, 'repeticoes': '3-5', 'carga': 'Técnica'},
+                    {'nome': 'Salto em Distância', 'series': 5, 'repeticoes': '5', 'carga': 'Corpo'},
+                    {'nome': 'Box Jump', 'series': 5, 'repeticoes': '6', 'altura': 'Progressiva'},
+                    {'nome': 'Arrancada', 'series': 5, 'repeticoes': '3', 'carga': 'Técnica'}
+                ],
+                'C - Velocidade + Agilidade': [
+                    {'nome': 'Sprints - 40m', 'series': 8, 'descanso': '90s', 'intensidade': 'Máxima'},
+                    {'nome': 'Shuttle Run', 'series': 6, 'descanso': '2min', 'distancia': '5-10-5'},
+                    {'nome': 'Zig-Zag', 'series': 6, 'repeticoes': '10 cones', 'descanso': '90s'},
+                    {'nome': 'Reação a Estímulos', 'series': 4, 'repeticoes': '10', 'descanso': '60s'}
+                ],
+                'D - Resistência Específica': [
+                    {'nome': 'Corrida com Mudança de Direção', 'series': 5, 'tempo': '2min', 'descanso': '90s'},
+                    {'nome': 'Simulação de Jogo', 'series': 4, 'tempo': '4min', 'descanso': '3min'},
+                    {'nome': 'Fartlek Futebol', 'series': 1, 'duracao': '30min', 'variacao': 'Sprints + trote'},
+                    {'nome': 'Finalização em Movimento', 'series': 4, 'repeticoes': '10', 'descanso': '60s'}
+                ]
             }
         }
         
-        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.AB])
+        treino_base = exercicios_base.get(divisao, exercicios_base[DivisaoTreino.ABC])
+        
+        # Definir dias na semana
+        dias_semana_map = {
+            DivisaoTreino.AB: 3,
+            DivisaoTreino.ABC: 4,
+            DivisaoTreino.ABCD: 5
+        }
         
         treino = {
             'divisao': divisao.value,
-            'dias_semana': 3,
+            'dias_semana': dias_semana_map.get(divisao, 4),
             'observacoes': 'Integrar com treinos de futebol específicos',
             'sessoes': treino_base
         }

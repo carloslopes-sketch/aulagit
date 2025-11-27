@@ -1,0 +1,201 @@
+﻿id_produtos,nome,categoria,preco,estoque
+1,Smartphone Z,Eletrônicos,1250.00,45
+2,Notebook Pro,Eletrônicos,4500.00,15
+3,Mouse sem Fio,Acessórios,75.00,120
+4,Teclado Mecânico,Acessórios,220.00,70
+5,Monitor Ultra HD,Eletrônicos,1800.00,30
+6,Fone de Ouvido Bluetooth,Eletrônicos,150.00,90
+7,Impressora Multifuncional,Escritório,350.00,25
+8,Câmera Digital,Eletrônicos,900.00,18
+9,HD Externo 1TB,Acessórios,300.00,60
+10,Carregador Portátil,Acessórios,55.00,150
+11,Tablet Smart,Eletrônicos,850.00,40
+12,Smartwatch Fit,Eletrônicos,550.00,55
+13,Mesa de Escritório,Móveis,400.00,10
+14,Cadeira Ergonômica,Móveis,750.00,22
+15,Luminária LED,Escritório,45.00,200
+16,Webcam Full HD,Acessórios,120.00,85
+17,Roteador Wi-Fi,Eletrônicos,90.00,110
+18,Microfone Condensador,Áudio,280.00,35
+19,Caixa de Som Portátil,Áudio,180.00,65
+20,Placa de Vídeo RTX,Eletrônicos,3500.00,12
+21,Kit Ferramentas,Ferramentas,120.00,50
+22,Furadeira de Impacto,Ferramentas,180.00,28
+23,Parafusadeira Elétrica,Ferramentas,210.00,32
+24,Serra Tico-Tico,Ferramentas,250.00,15
+25,Chave de Fenda,Ferramentas,15.00,300
+26,Jogo de Brocas,Ferramentas,40.00,95
+27,Nível a Laser,Ferramentas,160.00,20
+28,Martelete Demolidor,Ferramentas,500.00,8
+29,Esmerilhadeira,Ferramentas,190.00,25
+30,Trena Digital,Ferramentas,60.00,100
+31,Batedeira Planetária,Cozinha,320.00,40
+32,Liquidificador Turbo,Cozinha,150.00,75
+33,Geladeira Frost Free,Eletrodomésticos,2500.00,10
+34,Micro-ondas Digital,Eletrodomésticos,450.00,30
+35,Fogão de Piso,Eletrodomésticos,800.00,12
+36,Lavadora de Roupas,Eletrodomésticos,1800.00,9
+37,Aspirador de Pó Robô,Eletrodomésticos,700.00,18
+38,Máquina de Café Espresso,Cozinha,550.00,22
+39,Panela de Pressão Elétrica,Cozinha,280.00,50
+40,Grill Elétrico,Cozinha,110.00,80
+41,Camiseta Algodão,Vestuário,35.00,250
+42,Calça Jeans Slim,Vestuário,90.00,180
+43,Tênis Casual,Calçados,120.00,150
+44,Jaqueta de Couro,Vestuário,250.00,60
+45,Sapato Social,Calçados,180.00,80
+46,Vestido Verão,Vestuário,70.00,110
+47,Mochila Escolar,Acessórios,80.00,130
+48,Óculos de Sol,Acessórios,150.00,70
+49,Relógio de Pulso,Acessórios,220.00,45
+50,Boné Esportivo,Vestuário,25.00,200
+51,Smartphone Y,Eletrônicos,1100.00,50
+52,Smart TV LED,Eletrônicos,2500.00,25
+53,Console de Videogame,Eletrônicos,3000.00,15
+54,Controle para Console,Acessórios,180.00,70
+55,Jogo de Videogame,Entretenimento,150.00,90
+56,Kit Limpeza PC,Escritório,30.00,150
+57,Filtro de Linha,Acessórios,40.00,180
+58,Cabo HDMI,Acessórios,25.00,250
+59,Impressora a Laser,Escritório,650.00,20
+60,Scanner de Documentos,Escritório,480.00,15
+61,Lava-louças,Eletrodomésticos,1500.00,8
+62,Frigobar,Eletrodomésticos,600.00,14
+63,Adegada de Vinhos,Eletrodomésticos,750.00,7
+64,Ar Condicionado Split,Eletrodomésticos,2200.00,11
+65,Ventilador de Teto,Eletrodomésticos,180.00,35
+66,Processador de Alimentos,Cozinha,200.00,60
+67,Sanduicheira Elétrica,Cozinha,80.00,100
+68,Forno Elétrico,Cozinha,500.00,15
+69,Assadeira de Silicone,Cozinha,30.00,200
+70,Conjunto de Panelas,Cozinha,250.00,40
+71,T-shirt Básica,Vestuário,25.00,300
+72,Blusa de Frio,Vestuário,80.00,120
+73,Bota de Couro,Calçados,190.00,65
+74,Cinto de Couro,Acessórios,50.00,100
+75,Carteira Masculina,Acessórios,40.00,90
+76,Saia Midi,Vestuário,65.00,85
+77,Bolsa de Ombro,Acessórios,100.00,75
+78,Cachecol de Lã,Vestuário,45.00,150
+79,Meia Cano Alto,Vestuário,15.00,400
+80,Sapato de Salto,Calçados,150.00,50
+81,Bicicleta Mountain Bike,Esportes,900.00,12
+82,Capacete de Ciclismo,Esportes,150.00,30
+83,Halteres 5kg,Esportes,80.00,50
+84,Corda de Pular,Esportes,20.00,150
+85,Tapete de Yoga,Esportes,60.00,70
+86,Bola de Futebol,Esportes,45.00,90
+87,Kit Natação,Esportes,95.00,40
+88,Tênis de Corrida,Calçados,180.00,80
+89,Saco de Pancadas,Esportes,250.00,15
+90,Luva de Boxe,Esportes,120.00,25
+91,Livro Aventura,Livros,40.00,200
+92,Livro Fantasia,Livros,55.00,180
+93,Ebook de Marketing,Livros,25.00,500
+94,Kit Canetas Coloridas,Papelaria,30.00,150
+95,Caderno Universitário,Papelaria,20.00,250
+96,Mochila Notebook,Acessórios,120.00,60
+97,Estojo Escolar,Papelaria,15.00,300
+98,Agenda 2024,Papelaria,40.00,90
+99,Calculadora Científica,Escritório,80.00,75
+100,Post-it Colorido,Papelaria,10.00,400
+101,Câmera de Segurança,Segurança,250.00,30
+102,Fechadura Digital,Segurança,400.00,15
+103,Alarme Residencial,Segurança,350.00,20
+104,Detector de Fumaça,Segurança,80.00,50
+105,Kit Primeiros Socorros,Saúde,60.00,100
+106,Medidor de Pressão,Saúde,150.00,40
+107,Termômetro Digital,Saúde,35.00,120
+108,Balança de Banheiro,Saúde,90.00,60
+109,Escova de Dentes Elétrica,Higiene,110.00,80
+110,Secador de Cabelo,Beleza,180.00,50
+111,Prancha de Cabelo,Beleza,220.00,45
+112,Máquina de Cortar Cabelo,Beleza,150.00,35
+113,Aparelho de Barbear,Higiene,70.00,90
+114,Kit Maquiagem,Beleza,130.00,75
+115,Perfume Masculino,Beleza,250.00,50
+116,Perfume Feminino,Beleza,280.00,40
+117,Creme Hidratante,Beleza,45.00,150
+118,Shampoo Anticaspa,Higiene,25.00,200
+119,Condicionador,Higiene,25.00,180
+120,Sabonete Líquido,Higiene,15.00,300
+121,Guarda-roupa,Móveis,800.00,8
+122,Cama Queen Size,Móveis,1200.00,10
+123,Sofá de 3 lugares,Móveis,1500.00,6
+124,Rack para TV,Móveis,350.00,15
+125,Mesa de Centro,Móveis,180.00,25
+126,Estante de Livros,Móveis,450.00,18
+127,Poltrona Decorativa,Móveis,600.00,12
+128,Cômoda com Gavetas,Móveis,550.00,14
+129,Espelho de Parede,Decoração,100.00,40
+130,Quadro Decorativo,Decoração,80.00,60
+131,Vaso de Flores,Decoração,40.00,150
+132,Cortina Blecaute,Decoração,120.00,30
+133,Tapete de Sala,Decoração,250.00,20
+134,Lustre de Cristal,Decoração,450.00,10
+135,Abajur de Mesa,Decoração,90.00,50
+136,Vela Aromática,Decoração,20.00,200
+137,Almofada Decorativa,Decoração,35.00,180
+138,Manta para Sofá,Decoração,70.00,90
+139,Panela de Cerâmica,Cozinha,150.00,60
+140,Conjunto de Facas,Cozinha,220.00,40
+141,Máquina de Gelo,Eletrodomésticos,650.00,9
+142,Aspirador de Pó Vertical,Eletrodomésticos,400.00,22
+143,Lavadora de Alta Pressão,Limpeza,500.00,15
+144,Kit de Limpeza Automotiva,Limpeza,80.00,70
+145,Balde e Mop,Limpeza,60.00,100
+146,Sabão em Pó,Limpeza,25.00,300
+147,Amaciante,Limpeza,20.00,250
+148,Esponja de Limpeza,Limpeza,5.00,500
+149,Limpador Multiuso,Limpeza,12.00,400
+150,Álcool em Gel,Saúde,25.00,350
+151,Máscara de Proteção,Saúde,5.00,1000
+152,Protetor Solar,Saúde,40.00,150
+153,Repelente de Insetos,Saúde,30.00,180
+154,Antisséptico Bucal,Higiene,20.00,220
+155,Fio Dental,Higiene,10.00,300
+156,Creme Dental,Higiene,15.00,250
+157,Desodorante,Higiene,18.00,280
+158,Bolsa Térmica,Acessórios,55.00,90
+159,Guarda-chuva Automático,Acessórios,45.00,110
+160,Pochete Esportiva,Acessórios,30.00,150
+161,Drone com Câmera,Eletrônicos,1500.00,8
+162,Câmera de Ação,Eletrônicos,600.00,18
+163,Gimbal para Celular,Acessórios,250.00,30
+164,Placa de Captura,Acessórios,180.00,25
+165,Headset Gamer,Eletrônicos,300.00,40
+166,Monitor Gamer 144Hz,Eletrônicos,1200.00,20
+167,Teclado Gamer RGB,Acessórios,280.00,55
+168,Mouse Gamer,Acessórios,90.00,70
+169,Mousepad Grande,Acessórios,40.00,100
+170,Cadeira Gamer,Móveis,950.00,10
+171,Jogo de Tabuleiro,Entretenimento,80.00,60
+172,Quebra-cabeça 1000 peças,Entretenimento,70.00,80
+173,Baralho de Cartas,Entretenimento,15.00,200
+174,Guitarra Elétrica,Música,600.00,12
+175,Violão Acústico,Música,450.00,15
+176,Teclado Musical,Música,700.00,10
+177,Microfone para Karaokê,Música,120.00,50
+178,Fone de Ouvido Studio,Áudio,350.00,25
+179,Caixa de Som para PC,Áudio,100.00,70
+180,Kit Bateria Eletrônica,Música,1500.00,5
+181,Kit Ferramentas para Carro,Automotivo,200.00,30
+182,Capa de Carro,Automotivo,150.00,40
+183,Pneu para Carro,Automotivo,350.00,25
+184,Óleo de Motor,Automotivo,45.00,80
+185,Cabo de Bateria,Automotivo,60.00,60
+186,Extintor de Incêndio,Segurança,80.00,50
+187,Kit de Emergência Veicular,Automotivo,120.00,45
+188,GPS Automotivo,Eletrônicos,250.00,35
+189,Central Multimídia,Eletrônicos,600.00,20
+190,Câmera de Ré,Automotivo,100.00,55
+191,Ração para Cães,Pet Shop,50.00,150
+192,Cama para Gatos,Pet Shop,80.00,90
+193,Brinquedo para Pet,Pet Shop,20.00,200
+194,Coleira e Guia,Pet Shop,35.00,180
+195,Shampoo para Cães,Pet Shop,25.00,150
+196,Pente para Pet,Pet Shop,15.00,250
+197,Gaiola para Pássaro,Pet Shop,120.00,30
+198,Aquário Pequeno,Pet Shop,90.00,40
+199,Filtro para Aquário,Pet Shop,50.00,60
+200,Bomba de Ar para Aquário,Pet Shop,30.00,90

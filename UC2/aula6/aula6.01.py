@@ -55,7 +55,7 @@ plt.show()
 
 
 # Carregar o arquivo completo:
-df_produtos = pd.read_csv('..aula6/vendas_produtos.csv')
+df_produtos = pd.read_csv('vendas_produtos.csv')
 
 # Extrair a coluna de preços:
 precos_array = df_produtos['preco'].values
@@ -107,6 +107,7 @@ if not outliers_inferiores.empty or not outliers_superiores.empty:
     axes[0].set_ylabel('Preço (R$)')
     axes[0].tick_params(axis='x', rotation=45, labelsize=8)
     axes[0].grid(axis='y', linestyle='--')
+
     
     # 2ª Posição: Outliers Superiores (Decrescente)
     # Ordenamos novamente para garantir a visualização correta

@@ -1,0 +1,628 @@
+CustomerID,CustomerName,City,State,Country
+CUST001504,Vihaan Sharma,Washington,DC,India
+CUST000178,Pooja Kumar,Fort Worth,TX,United States
+CUST047516,Sneha Singh,Austin,TX,United States
+CUST030059,Vihaan Reddy,Charlotte,NC,India
+CUST048677,Aditya Kapoor,San Antonio,TX,Canada
+CUST042705,Karan Sharma,Los Angeles,CA,United States
+CUST037667,Aarav Verma,Chicago,IL,Australia
+CUST031165,Rohit Kumar,Denver,CO,India
+CUST026965,Aman Kapoor,Washington,DC,United States
+CUST029472,Aarav Reddy,Houston,TX,United States
+CUST005346,Rohit Reddy,Jacksonville,FL,Australia
+CUST046088,Karan Kumar,Charlotte,NC,Australia
+CUST026576,Simran Kapoor,New York,NY,United States
+CUST006051,Pooja Sharma,Seattle,WA,United States
+CUST025111,Mohit Mehta,Indianapolis,IN,United States
+CUST040957,Anjali Gupta,Jacksonville,FL,United States
+CUST000735,Arjun Kumar,Philadelphia,PA,United States
+CUST038237,Anjali Verma,Seattle,WA,United States
+CUST040211,Aditya Mehta,Phoenix,AZ,United States
+CUST046893,Vihaan Patel,San Diego,CA,United States
+CUST041508,Vikas Kapoor,Fort Worth,TX,United States
+CUST048817,Pooja Sharma,Chicago,IL,Australia
+CUST048828,Simran Reddy,Phoenix,AZ,Canada
+CUST033080,Vihaan Mehta,Dallas,TX,United States
+CUST041929,Aditya Reddy,Jacksonville,FL,United States
+CUST035043,Priya Kapoor,Columbus,OH,Canada
+CUST043777,Vikas Kapoor,San Francisco,CA,United States
+CUST037985,Rohit Verma,San Antonio,TX,United Kingdom
+CUST000721,Vivaan Kumar,Denver,CO,United States
+CUST008013,Priya Verma,Phoenix,AZ,United States
+CUST018693,Sneha Verma,Charlotte,NC,United Kingdom
+CUST044089,Sunita Gupta,Houston,TX,India
+CUST011946,Simran Patel,Washington,DC,United States
+CUST049225,Mohit Patel,Austin,TX,United States
+CUST048518,Vikas Kumar,Fort Worth,TX,United States
+CUST047957,Pooja Verma,Columbus,OH,United Kingdom
+CUST043577,Kabir Singh,Phoenix,AZ,United States
+CUST029566,Sahil Kumar,Fort Worth,TX,United States
+CUST004199,Mohit Joshi,San Antonio,TX,United Kingdom
+CUST042096,Sunita Gupta,Jacksonville,FL,United States
+CUST017203,Sahil Kumar,Chicago,IL,United States
+CUST046853,Anjali Sharma,San Antonio,TX,United States
+CUST020850,Sneha Sharma,San Diego,CA,India
+CUST039744,Anjali Mehta,San Antonio,TX,United States
+CUST017434,Pooja Verma,Houston,TX,United States
+CUST045893,Rohit Kapoor,New York,NY,United States
+CUST033696,Anjali Kumar,Austin,TX,United States
+CUST032008,Neha Mehta,San Diego,CA,Australia
+CUST011785,Simran Singh,San Antonio,TX,Australia
+CUST001846,Pooja Singh,San Jose,CA,India
+CUST048348,Sneha Reddy,San Jose,CA,Australia
+CUST027076,Sahil Gupta,Columbus,OH,United States
+CUST012995,Ritika Mehta,Seattle,WA,United States
+CUST030633,Ritika Mehta,Charlotte,NC,India
+CUST013482,Vikas Kumar,Chicago,IL,United States
+CUST030091,Arjun Reddy,Chicago,IL,United States
+CUST031856,Neha Verma,San Jose,CA,United States
+CUST040925,Vivaan Verma,San Diego,CA,Canada
+CUST031615,Arjun Singh,Dallas,TX,United States
+CUST018312,Karan Kapoor,Jacksonville,FL,India
+CUST017070,Aditya Mehta,Austin,TX,India
+CUST026591,Sunita Kapoor,Charlotte,NC,Canada
+CUST006724,Simran Reddy,Fort Worth,TX,United States
+CUST026258,Pooja Reddy,Chicago,IL,United States
+CUST000139,Aarav Verma,Los Angeles,CA,India
+CUST038107,Sahil Gupta,Indianapolis,IN,United States
+CUST015763,Anjali Verma,Charlotte,NC,India
+CUST041458,Priya Mehta,Indianapolis,IN,United States
+CUST033817,Mohit Joshi,Columbus,OH,United States
+CUST041366,Aarav Gupta,Denver,CO,United States
+CUST005372,Aman Singh,San Jose,CA,United States
+CUST018135,Aman Verma,Jacksonville,FL,United States
+CUST043454,Priya Reddy,Dallas,TX,United States
+CUST007050,Kabir Kumar,Indianapolis,IN,United States
+CUST027444,Arjun Patel,Houston,TX,United States
+CUST042061,Mohit Reddy,Philadelphia,PA,Canada
+CUST016864,Aman Sharma,San Jose,CA,United States
+CUST028956,Kabir Patel,Dallas,TX,United States
+CUST001710,Neha Sharma,Chicago,IL,Australia
+CUST023701,Vihaan Patel,San Francisco,CA,India
+CUST005263,Priya Kumar,Austin,TX,India
+CUST014979,Vivaan Kumar,Chicago,IL,United States
+CUST038225,Ritika Verma,Austin,TX,United States
+CUST028769,Aditya Joshi,Fort Worth,TX,United States
+CUST049605,Aditya Reddy,Austin,TX,United States
+CUST015624,Arjun Singh,Houston,TX,United States
+CUST026490,Neha Reddy,Los Angeles,CA,United States
+CUST001370,Mohit Gupta,Philadelphia,PA,Canada
+CUST043394,Aman Kapoor,Denver,CO,United States
+CUST039077,Karan Kumar,Fort Worth,TX,United States
+CUST007564,Sahil Kumar,Denver,CO,United States
+CUST033299,Priya Mehta,Dallas,TX,United States
+CUST039707,Vikas Joshi,San Francisco,CA,United States
+CUST043458,Aman Joshi,Dallas,TX,United States
+CUST001552,Vihaan Kumar,Chicago,IL,United States
+CUST039426,Sneha Verma,Charlotte,NC,United States
+CUST049557,Anjali Sharma,Fort Worth,TX,United States
+CUST033386,Ritika Reddy,San Francisco,CA,United States
+CUST018449,Sneha Kapoor,Chicago,IL,United States
+CUST012492,Sneha Sharma,Phoenix,AZ,India
+CUST015367,Aditya Sharma,Philadelphia,PA,United States
+CUST009929,Sneha Verma,New York,NY,United States
+CUST030254,Vivaan Patel,San Diego,CA,United States
+CUST041994,Aditya Reddy,Indianapolis,IN,United States
+CUST034561,Sneha Gupta,Austin,TX,United States
+CUST028297,Neha Kumar,Austin,TX,United States
+CUST002237,Sahil Singh,Indianapolis,IN,United States
+CUST007600,Ritika Kapoor,Los Angeles,CA,United States
+CUST010526,Neha Kumar,Dallas,TX,United States
+CUST024904,Neha Mehta,Phoenix,AZ,India
+CUST033463,Rohit Verma,San Antonio,TX,United States
+CUST015883,Vihaan Mehta,San Francisco,CA,United States
+CUST035697,Vikas Mehta,Austin,TX,United States
+CUST010676,Karan Joshi,San Antonio,TX,United States
+CUST037855,Vivaan Verma,Los Angeles,CA,United States
+CUST013803,Vivaan Mehta,Los Angeles,CA,United States
+CUST041291,Anjali Verma,Fort Worth,TX,United States
+CUST025351,Sneha Kumar,Denver,CO,United States
+CUST023478,Rohit Reddy,Philadelphia,PA,United States
+CUST029783,Simran Singh,San Francisco,CA,United States
+CUST001056,Karan Singh,Columbus,OH,United States
+CUST026942,Pooja Joshi,Austin,TX,Canada
+CUST027791,Sneha Verma,San Francisco,CA,United States
+CUST019410,Simran Reddy,San Jose,CA,United States
+CUST009308,Vihaan Sharma,Houston,TX,United Kingdom
+CUST004285,Sahil Sharma,Houston,TX,United States
+CUST037966,Aditya Kumar,Charlotte,NC,United States
+CUST025421,Mohit Mehta,Denver,CO,United States
+CUST039352,Neha Joshi,Dallas,TX,United States
+CUST032886,Rohit Mehta,Houston,TX,United States
+CUST014360,Vivaan Singh,Los Angeles,CA,United States
+CUST007708,Sunita Sharma,Charlotte,NC,Australia
+CUST013067,Sunita Gupta,Seattle,WA,United States
+CUST046835,Simran Gupta,San Diego,CA,United States
+CUST011228,Karan Reddy,Los Angeles,CA,India
+CUST046806,Neha Singh,Washington,DC,United Kingdom
+CUST014033,Rohit Gupta,Philadelphia,PA,United States
+CUST040569,Rohit Sharma,Jacksonville,FL,India
+CUST041172,Ritika Reddy,Fort Worth,TX,United States
+CUST001601,Vivaan Patel,Columbus,OH,United States
+CUST046508,Vivaan Sharma,Seattle,WA,United States
+CUST027712,Ritika Joshi,San Antonio,TX,United States
+CUST029705,Aman Reddy,Houston,TX,United States
+CUST008224,Mohit Sharma,Philadelphia,PA,United States
+CUST046362,Aman Verma,New York,NY,United Kingdom
+CUST005950,Mohit Verma,Washington,DC,India
+CUST037485,Kabir Verma,San Francisco,CA,India
+CUST027818,Sneha Mehta,Chicago,IL,United States
+CUST048304,Vihaan Kapoor,Chicago,IL,United States
+CUST033670,Sneha Kapoor,Columbus,OH,United States
+CUST038774,Kabir Sharma,Austin,TX,United Kingdom
+CUST026880,Kabir Verma,New York,NY,United Kingdom
+CUST044830,Karan Kapoor,Columbus,OH,United States
+CUST040087,Ritika Reddy,Phoenix,AZ,United Kingdom
+CUST026727,Anjali Gupta,Philadelphia,PA,United States
+CUST011225,Rohit Patel,Seattle,WA,United States
+CUST031885,Sneha Gupta,Phoenix,AZ,United Kingdom
+CUST016025,Sunita Singh,Houston,TX,Canada
+CUST036113,Priya Joshi,Austin,TX,United States
+CUST043628,Anjali Verma,Chicago,IL,United States
+CUST020507,Aarav Joshi,Seattle,WA,United States
+CUST012422,Kabir Kapoor,San Antonio,TX,United States
+CUST009807,Vihaan Verma,San Antonio,TX,United States
+CUST048496,Sahil Kumar,Dallas,TX,United States
+CUST029400,Aman Gupta,Philadelphia,PA,United States
+CUST004811,Arjun Patel,San Francisco,CA,United States
+CUST008669,Aditya Kumar,Jacksonville,FL,United States
+CUST035784,Vikas Gupta,Austin,TX,United States
+CUST027512,Mohit Joshi,Dallas,TX,Canada
+CUST023754,Sahil Gupta,Jacksonville,FL,Canada
+CUST011579,Kabir Reddy,Denver,CO,United States
+CUST003082,Aarav Reddy,Austin,TX,United States
+CUST040193,Priya Verma,New York,NY,United States
+CUST014061,Arjun Gupta,San Jose,CA,United States
+CUST028212,Vihaan Verma,Los Angeles,CA,United States
+CUST010967,Sahil Singh,Denver,CO,United Kingdom
+CUST022674,Pooja Gupta,Chicago,IL,United States
+CUST048983,Kabir Kumar,Charlotte,NC,India
+CUST016133,Anjali Kumar,Los Angeles,CA,United States
+CUST044928,Pooja Reddy,Jacksonville,FL,United States
+CUST024560,Neha Gupta,Dallas,TX,United States
+CUST019814,Vivaan Verma,New York,NY,United States
+CUST015222,Karan Gupta,Houston,TX,Australia
+CUST015733,Vivaan Sharma,Fort Worth,TX,United States
+CUST023655,Anjali Singh,Chicago,IL,United States
+CUST021204,Pooja Singh,Phoenix,AZ,United States
+CUST016221,Simran Reddy,San Diego,CA,Canada
+CUST036912,Karan Reddy,Philadelphia,PA,United States
+CUST043111,Aarav Verma,Charlotte,NC,United States
+CUST034016,Aditya Singh,Phoenix,AZ,United States
+CUST040748,Sahil Sharma,San Diego,CA,United States
+CUST004207,Vikas Kapoor,San Antonio,TX,Canada
+CUST041282,Sahil Singh,Indianapolis,IN,United States
+CUST044672,Karan Singh,San Jose,CA,United States
+CUST004859,Vivaan Gupta,Washington,DC,United States
+CUST007154,Vikas Sharma,San Diego,CA,United States
+CUST035993,Vikas Kumar,Houston,TX,United States
+CUST027565,Sneha Verma,San Francisco,CA,United States
+CUST010007,Vikas Reddy,San Jose,CA,Canada
+CUST022505,Karan Kapoor,Dallas,TX,United States
+CUST007081,Arjun Kumar,Dallas,TX,India
+CUST042401,Mohit Singh,Dallas,TX,United States
+CUST040825,Karan Sharma,Denver,CO,Canada
+CUST022812,Mohit Patel,Fort Worth,TX,India
+CUST029448,Karan Kumar,Columbus,OH,Australia
+CUST025313,Pooja Singh,Columbus,OH,United States
+CUST029438,Vihaan Mehta,Chicago,IL,India
+CUST001181,Vivaan Joshi,Phoenix,AZ,India
+CUST017264,Sneha Kumar,San Jose,CA,United Kingdom
+CUST039608,Simran Patel,Los Angeles,CA,India
+CUST019237,Priya Kumar,New York,NY,United Kingdom
+CUST035731,Sneha Sharma,Washington,DC,United States
+CUST012280,Rohit Mehta,Columbus,OH,India
+CUST003507,Anjali Gupta,Fort Worth,TX,United States
+CUST023893,Aditya Gupta,Fort Worth,TX,Canada
+CUST008440,Vikas Reddy,Jacksonville,FL,United States
+CUST019363,Sunita Reddy,Denver,CO,United States
+CUST034266,Anjali Sharma,Houston,TX,India
+CUST026742,Vihaan Gupta,San Diego,CA,India
+CUST020572,Mohit Kapoor,Dallas,TX,United States
+CUST012246,Pooja Sharma,Charlotte,NC,United States
+CUST021328,Vihaan Kapoor,San Diego,CA,United States
+CUST017932,Karan Patel,Austin,TX,United States
+CUST030236,Anjali Mehta,San Antonio,TX,India
+CUST018375,Kabir Reddy,Phoenix,AZ,United States
+CUST031704,Vihaan Mehta,San Francisco,CA,United States
+CUST003147,Ritika Kumar,Washington,DC,United States
+CUST014415,Pooja Sharma,Chicago,IL,India
+CUST001747,Karan Sharma,Denver,CO,United Kingdom
+CUST031415,Aman Reddy,Denver,CO,United States
+CUST048207,Rohit Patel,Denver,CO,United States
+CUST019145,Karan Verma,Jacksonville,FL,United States
+CUST028877,Anjali Kapoor,Chicago,IL,United States
+CUST006962,Anjali Verma,Fort Worth,TX,United States
+CUST037405,Priya Reddy,Denver,CO,United States
+CUST025402,Priya Mehta,Chicago,IL,United States
+CUST029978,Anjali Mehta,Los Angeles,CA,India
+CUST049175,Priya Reddy,Indianapolis,IN,United States
+CUST028805,Arjun Kumar,Los Angeles,CA,United States
+CUST024635,Karan Mehta,Fort Worth,TX,India
+CUST034448,Mohit Kapoor,New York,NY,Australia
+CUST040551,Ritika Gupta,Seattle,WA,Canada
+CUST034398,Sunita Reddy,San Antonio,TX,United States
+CUST042901,Aarav Gupta,Columbus,OH,United States
+CUST029445,Priya Kumar,Seattle,WA,India
+CUST039354,Karan Kapoor,Seattle,WA,India
+CUST047386,Kabir Patel,Phoenix,AZ,United States
+CUST014192,Simran Joshi,San Francisco,CA,United States
+CUST027774,Simran Kumar,Charlotte,NC,United States
+CUST045022,Aman Joshi,Philadelphia,PA,United States
+CUST015291,Mohit Verma,Chicago,IL,United States
+CUST019542,Priya Reddy,Washington,DC,United States
+CUST005818,Kabir Patel,Austin,TX,Canada
+CUST017005,Aditya Kumar,Chicago,IL,India
+CUST004652,Priya Kumar,Dallas,TX,United States
+CUST000716,Rohit Singh,Washington,DC,India
+CUST008298,Aarav Sharma,Charlotte,NC,United States
+CUST047323,Sneha Joshi,San Jose,CA,India
+CUST024173,Kabir Verma,San Francisco,CA,United States
+CUST039468,Simran Mehta,Phoenix,AZ,United States
+CUST017113,Ritika Kumar,Houston,TX,United States
+CUST012593,Sunita Joshi,Philadelphia,PA,United States
+CUST043099,Sunita Kumar,Phoenix,AZ,India
+CUST002544,Arjun Sharma,Fort Worth,TX,United States
+CUST003153,Vihaan Mehta,Columbus,OH,United States
+CUST049849,Sneha Singh,Seattle,WA,United States
+CUST020614,Aman Joshi,Jacksonville,FL,United States
+CUST008599,Vivaan Reddy,San Antonio,TX,Australia
+CUST031058,Sneha Verma,Jacksonville,FL,United States
+CUST032555,Simran Singh,Houston,TX,United States
+CUST023550,Simran Reddy,Seattle,WA,United States
+CUST042540,Sahil Kapoor,Columbus,OH,India
+CUST044529,Anjali Joshi,Philadelphia,PA,United States
+CUST037954,Kabir Reddy,Washington,DC,India
+CUST035117,Karan Reddy,Los Angeles,CA,United States
+CUST046611,Simran Singh,Phoenix,AZ,United States
+CUST044280,Neha Joshi,Columbus,OH,United States
+CUST033284,Pooja Kumar,Philadelphia,PA,United States
+CUST036194,Pooja Reddy,Dallas,TX,India
+CUST023648,Neha Kumar,Fort Worth,TX,Canada
+CUST001746,Pooja Joshi,San Francisco,CA,India
+CUST034953,Aditya Gupta,Indianapolis,IN,India
+CUST036197,Sneha Gupta,Chicago,IL,United Kingdom
+CUST001072,Anjali Patel,San Jose,CA,United States
+CUST001188,Sahil Verma,San Diego,CA,Canada
+CUST016884,Arjun Singh,Chicago,IL,United States
+CUST043203,Sneha Mehta,Washington,DC,United States
+CUST012562,Arjun Kumar,Dallas,TX,United States
+CUST030504,Aditya Mehta,Jacksonville,FL,United States
+CUST002550,Karan Patel,Washington,DC,United States
+CUST006082,Sahil Joshi,Columbus,OH,United States
+CUST007148,Karan Sharma,Columbus,OH,United States
+CUST014657,Rohit Mehta,New York,NY,India
+CUST049112,Sunita Kapoor,Denver,CO,India
+CUST029592,Aarav Kapoor,Philadelphia,PA,Canada
+CUST014517,Sunita Joshi,San Diego,CA,United States
+CUST005746,Aarav Patel,San Diego,CA,United States
+CUST027050,Priya Mehta,Columbus,OH,United States
+CUST017205,Karan Reddy,New York,NY,India
+CUST009192,Sahil Kapoor,Charlotte,NC,United States
+CUST008766,Sneha Joshi,New York,NY,United States
+CUST001699,Sneha Gupta,Washington,DC,United States
+CUST019427,Karan Joshi,Chicago,IL,United States
+CUST003257,Aarav Mehta,Chicago,IL,United States
+CUST002188,Anjali Mehta,Charlotte,NC,United Kingdom
+CUST001779,Mohit Joshi,New York,NY,Australia
+CUST032817,Arjun Kapoor,New York,NY,United States
+CUST034263,Sahil Sharma,Denver,CO,United States
+CUST047601,Sunita Kapoor,Houston,TX,United States
+CUST042134,Ritika Sharma,San Jose,CA,United States
+CUST013914,Aditya Mehta,Denver,CO,United States
+CUST039236,Arjun Joshi,Washington,DC,India
+CUST025927,Mohit Sharma,Indianapolis,IN,India
+CUST000351,Pooja Mehta,Los Angeles,CA,India
+CUST034695,Anjali Kumar,Indianapolis,IN,United States
+CUST034686,Simran Patel,Fort Worth,TX,United States
+CUST028950,Anjali Mehta,Phoenix,AZ,United States
+CUST012442,Pooja Mehta,Austin,TX,United States
+CUST038779,Pooja Verma,Dallas,TX,United States
+CUST012713,Neha Sharma,San Francisco,CA,United States
+CUST020344,Sahil Sharma,Columbus,OH,United States
+CUST005270,Vikas Kumar,Seattle,WA,United States
+CUST023625,Aditya Sharma,Charlotte,NC,United States
+CUST010542,Aarav Kumar,Columbus,OH,United States
+CUST021562,Rohit Sharma,San Jose,CA,United States
+CUST031261,Kabir Singh,Indianapolis,IN,United States
+CUST024288,Sneha Singh,San Antonio,TX,United States
+CUST015925,Neha Verma,Dallas,TX,India
+CUST011154,Ritika Kumar,Chicago,IL,India
+CUST023840,Simran Gupta,Columbus,OH,United States
+CUST004105,Vikas Singh,Chicago,IL,United States
+CUST034270,Kabir Kapoor,Philadelphia,PA,United States
+CUST031200,Vihaan Singh,Indianapolis,IN,United States
+CUST002824,Priya Verma,Indianapolis,IN,United States
+CUST046488,Ritika Sharma,Indianapolis,IN,India
+CUST000068,Priya Kapoor,San Francisco,CA,United States
+CUST025908,Sunita Mehta,Houston,TX,United States
+CUST012590,Rohit Verma,Fort Worth,TX,United States
+CUST043281,Ritika Kumar,Denver,CO,United States
+CUST023061,Vihaan Gupta,New York,NY,United States
+CUST024329,Kabir Verma,Phoenix,AZ,United States
+CUST049916,Ritika Sharma,Chicago,IL,United States
+CUST005573,Vikas Reddy,Indianapolis,IN,United States
+CUST041438,Karan Patel,Seattle,WA,United States
+CUST027366,Aditya Reddy,Philadelphia,PA,Australia
+CUST013256,Anjali Sharma,San Jose,CA,United States
+CUST037808,Karan Joshi,Philadelphia,PA,United States
+CUST012334,Vihaan Mehta,San Francisco,CA,United States
+CUST046689,Vikas Joshi,Denver,CO,India
+CUST017408,Arjun Mehta,Fort Worth,TX,United States
+CUST014960,Mohit Reddy,Chicago,IL,United States
+CUST010085,Pooja Kapoor,San Jose,CA,United Kingdom
+CUST021961,Sahil Joshi,Dallas,TX,United States
+CUST029119,Simran Mehta,San Francisco,CA,India
+CUST037507,Ritika Gupta,Indianapolis,IN,United States
+CUST006815,Anjali Kumar,New York,NY,United Kingdom
+CUST039527,Aditya Gupta,New York,NY,United States
+CUST021127,Simran Kumar,San Diego,CA,United States
+CUST034300,Simran Kapoor,Washington,DC,United States
+CUST021084,Kabir Mehta,Phoenix,AZ,United States
+CUST005859,Anjali Sharma,Fort Worth,TX,United States
+CUST049807,Neha Patel,San Francisco,CA,Australia
+CUST041735,Mohit Joshi,San Jose,CA,Canada
+CUST014691,Rohit Patel,Phoenix,AZ,United States
+CUST028272,Pooja Patel,Fort Worth,TX,India
+CUST006623,Pooja Kapoor,Los Angeles,CA,United Kingdom
+CUST038822,Pooja Reddy,Phoenix,AZ,United States
+CUST005512,Aarav Reddy,Columbus,OH,United States
+CUST011448,Rohit Verma,Washington,DC,United States
+CUST045030,Sneha Mehta,Dallas,TX,United States
+CUST040400,Neha Reddy,Jacksonville,FL,United States
+CUST008802,Sneha Joshi,Austin,TX,United States
+CUST049537,Neha Joshi,Los Angeles,CA,United States
+CUST047635,Aarav Verma,San Francisco,CA,India
+CUST014084,Priya Kumar,Washington,DC,United States
+CUST000192,Sunita Kumar,San Diego,CA,United States
+CUST040930,Priya Kapoor,San Diego,CA,United States
+CUST006786,Vikas Joshi,Jacksonville,FL,India
+CUST044236,Sahil Reddy,San Francisco,CA,United Kingdom
+CUST035512,Vikas Mehta,Houston,TX,India
+CUST044533,Sahil Patel,Phoenix,AZ,United States
+CUST015840,Vikas Joshi,Charlotte,NC,United States
+CUST012211,Pooja Gupta,Phoenix,AZ,India
+CUST041119,Pooja Kumar,Philadelphia,PA,India
+CUST019770,Vihaan Kumar,Washington,DC,Australia
+CUST014244,Anjali Verma,Washington,DC,India
+CUST039927,Sahil Singh,Seattle,WA,Canada
+CUST018394,Rohit Kumar,San Diego,CA,United States
+CUST030988,Neha Gupta,Chicago,IL,United States
+CUST019107,Ritika Reddy,Charlotte,NC,India
+CUST037892,Kabir Gupta,Denver,CO,United States
+CUST023324,Vihaan Kumar,Charlotte,NC,United Kingdom
+CUST030181,Priya Kumar,Indianapolis,IN,United States
+CUST013642,Vikas Singh,Philadelphia,PA,India
+CUST009422,Priya Sharma,Chicago,IL,India
+CUST048133,Sahil Singh,Fort Worth,TX,United States
+CUST036618,Pooja Sharma,Indianapolis,IN,United States
+CUST011417,Vivaan Reddy,Houston,TX,India
+CUST034217,Priya Singh,Los Angeles,CA,Canada
+CUST033773,Neha Verma,Philadelphia,PA,United States
+CUST009971,Aarav Kapoor,Washington,DC,United States
+CUST016596,Priya Joshi,San Antonio,TX,United Kingdom
+CUST022332,Neha Joshi,Seattle,WA,Australia
+CUST027937,Anjali Singh,Houston,TX,India
+CUST030345,Vivaan Gupta,Los Angeles,CA,India
+CUST008370,Neha Verma,Denver,CO,United States
+CUST044703,Aditya Mehta,San Francisco,CA,United States
+CUST030597,Neha Verma,Austin,TX,United States
+CUST045230,Ritika Sharma,San Jose,CA,United States
+CUST022493,Arjun Singh,Charlotte,NC,India
+CUST045811,Ritika Gupta,Houston,TX,United States
+CUST041583,Aditya Kumar,San Antonio,TX,United States
+CUST049796,Vihaan Reddy,Jacksonville,FL,India
+CUST000031,Karan Kapoor,Seattle,WA,United States
+CUST008196,Kabir Kapoor,Washington,DC,India
+CUST013179,Sneha Reddy,San Francisco,CA,United States
+CUST000018,Sunita Joshi,Philadelphia,PA,United States
+CUST025938,Simran Gupta,Washington,DC,United States
+CUST037096,Ritika Mehta,San Diego,CA,United States
+CUST001826,Priya Kapoor,Denver,CO,United States
+CUST024624,Kabir Sharma,Dallas,TX,United States
+CUST006207,Kabir Verma,San Antonio,TX,United States
+CUST019546,Rohit Kumar,Austin,TX,United States
+CUST034816,Pooja Verma,Los Angeles,CA,United Kingdom
+CUST007767,Mohit Kumar,San Francisco,CA,India
+CUST024865,Mohit Reddy,Chicago,IL,United States
+CUST007249,Aditya Singh,Denver,CO,United States
+CUST024746,Aarav Mehta,Fort Worth,TX,United States
+CUST016032,Simran Kapoor,San Francisco,CA,United States
+CUST028771,Neha Gupta,Washington,DC,United States
+CUST023411,Vivaan Kumar,San Jose,CA,United States
+CUST040414,Priya Gupta,Columbus,OH,Australia
+CUST018575,Simran Verma,Los Angeles,CA,United States
+CUST039284,Sneha Gupta,San Jose,CA,United States
+CUST044787,Ritika Kumar,Denver,CO,United States
+CUST013895,Karan Verma,Austin,TX,United States
+CUST047497,Sahil Kumar,Indianapolis,IN,United Kingdom
+CUST032397,Arjun Gupta,Phoenix,AZ,United Kingdom
+CUST021608,Arjun Verma,Phoenix,AZ,United States
+CUST042130,Vivaan Singh,Phoenix,AZ,United States
+CUST011939,Priya Kapoor,Columbus,OH,United States
+CUST032769,Ritika Gupta,Columbus,OH,United States
+CUST039640,Simran Verma,Philadelphia,PA,United States
+CUST005245,Simran Gupta,San Jose,CA,United Kingdom
+CUST029042,Sunita Gupta,San Diego,CA,United States
+CUST007204,Aman Reddy,Chicago,IL,Canada
+CUST049394,Neha Joshi,New York,NY,United States
+CUST032464,Aditya Kapoor,Phoenix,AZ,United States
+CUST021458,Vivaan Mehta,Houston,TX,India
+CUST044799,Anjali Kapoor,Fort Worth,TX,India
+CUST011203,Pooja Sharma,Fort Worth,TX,United Kingdom
+CUST048942,Aditya Kumar,San Antonio,TX,United States
+CUST021245,Ritika Kapoor,Denver,CO,United States
+CUST021669,Aarav Gupta,Fort Worth,TX,United States
+CUST012286,Ritika Sharma,Charlotte,NC,United States
+CUST027621,Mohit Joshi,Fort Worth,TX,India
+CUST049115,Aman Joshi,Fort Worth,TX,Australia
+CUST018220,Pooja Singh,Indianapolis,IN,United States
+CUST016196,Ritika Mehta,Indianapolis,IN,United States
+CUST005196,Neha Verma,San Antonio,TX,United States
+CUST020302,Neha Patel,San Diego,CA,India
+CUST003763,Karan Patel,San Antonio,TX,Canada
+CUST015050,Anjali Verma,Columbus,OH,United States
+CUST041737,Mohit Patel,Indianapolis,IN,United States
+CUST026072,Karan Joshi,Seattle,WA,United States
+CUST049522,Priya Mehta,Washington,DC,India
+CUST022865,Sahil Sharma,Seattle,WA,India
+CUST049733,Simran Verma,Fort Worth,TX,United States
+CUST031650,Anjali Gupta,Chicago,IL,United States
+CUST013377,Anjali Verma,Los Angeles,CA,United States
+CUST034331,Sunita Reddy,Austin,TX,United States
+CUST013224,Aarav Reddy,San Francisco,CA,Australia
+CUST034822,Simran Mehta,Los Angeles,CA,United Kingdom
+CUST042805,Vivaan Kumar,Seattle,WA,United States
+CUST008630,Aman Patel,Denver,CO,India
+CUST034759,Kabir Joshi,Denver,CO,United States
+CUST036736,Simran Sharma,Fort Worth,TX,United Kingdom
+CUST036150,Rohit Gupta,Chicago,IL,United States
+CUST039074,Sahil Singh,San Antonio,TX,United States
+CUST007456,Priya Joshi,Philadelphia,PA,United States
+CUST000342,Anjali Joshi,Dallas,TX,India
+CUST028594,Sunita Mehta,Chicago,IL,United Kingdom
+CUST039500,Vihaan Patel,Houston,TX,United States
+CUST042143,Karan Patel,San Diego,CA,Australia
+CUST030029,Pooja Patel,Austin,TX,United States
+CUST017431,Arjun Joshi,Austin,TX,United States
+CUST001021,Aditya Verma,Jacksonville,FL,Canada
+CUST046797,Aditya Verma,Houston,TX,Australia
+CUST030534,Karan Verma,Houston,TX,United States
+CUST049021,Vikas Singh,New York,NY,United States
+CUST027888,Sahil Sharma,Jacksonville,FL,India
+CUST002243,Ritika Reddy,Austin,TX,United States
+CUST008903,Sahil Patel,Charlotte,NC,United States
+CUST027637,Vihaan Mehta,Indianapolis,IN,United Kingdom
+CUST002558,Vikas Mehta,San Diego,CA,United States
+CUST021727,Vivaan Gupta,New York,NY,India
+CUST005548,Kabir Gupta,Philadelphia,PA,India
+CUST046930,Vikas Verma,Dallas,TX,United States
+CUST030151,Ritika Reddy,Chicago,IL,India
+CUST029666,Rohit Singh,Denver,CO,United States
+CUST041687,Neha Kumar,Dallas,TX,United States
+CUST029704,Vihaan Patel,San Antonio,TX,United States
+CUST014194,Sahil Patel,Jacksonville,FL,India
+CUST012572,Vihaan Gupta,Jacksonville,FL,United States
+CUST009709,Ritika Kumar,Fort Worth,TX,United States
+CUST012727,Karan Reddy,San Francisco,CA,United States
+CUST046847,Kabir Kapoor,San Antonio,TX,United States
+CUST006467,Sahil Sharma,Chicago,IL,United States
+CUST022221,Kabir Gupta,Jacksonville,FL,United States
+CUST022439,Aarav Singh,Dallas,TX,United States
+CUST006859,Pooja Gupta,Chicago,IL,United States
+CUST039325,Anjali Patel,Austin,TX,United States
+CUST023697,Aarav Singh,Jacksonville,FL,Canada
+CUST048774,Arjun Kapoor,Los Angeles,CA,United States
+CUST019726,Sunita Verma,Columbus,OH,United States
+CUST028627,Arjun Sharma,Chicago,IL,United States
+CUST037541,Aditya Reddy,San Francisco,CA,United Kingdom
+CUST018027,Rohit Mehta,Fort Worth,TX,United States
+CUST030540,Karan Joshi,Los Angeles,CA,United States
+CUST034643,Anjali Singh,Dallas,TX,United States
+CUST017237,Vikas Gupta,Austin,TX,United States
+CUST003101,Anjali Kapoor,Dallas,TX,United States
+CUST021724,Kabir Verma,San Francisco,CA,India
+CUST042705,Vivaan Singh,Seattle,WA,United Kingdom
+CUST007217,Mohit Kapoor,Seattle,WA,United States
+CUST018425,Vivaan Verma,San Jose,CA,United States
+CUST005122,Pooja Joshi,Fort Worth,TX,Australia
+CUST041670,Karan Joshi,Chicago,IL,United States
+CUST043609,Kabir Joshi,Houston,TX,United States
+CUST000070,Karan Gupta,Indianapolis,IN,United States
+CUST004801,Rohit Reddy,Los Angeles,CA,United States
+CUST024405,Vihaan Patel,Charlotte,NC,India
+CUST017301,Karan Verma,Denver,CO,United States
+CUST031212,Priya Kapoor,Dallas,TX,India
+CUST043505,Neha Reddy,Washington,DC,Australia
+CUST001051,Priya Sharma,Philadelphia,PA,United States
+CUST017599,Sneha Mehta,San Diego,CA,United States
+CUST001815,Kabir Sharma,San Francisco,CA,India
+CUST036068,Aarav Kumar,Denver,CO,United States
+CUST021348,Priya Kumar,Philadelphia,PA,India
+CUST001082,Arjun Gupta,Phoenix,AZ,United States
+CUST041773,Priya Patel,Denver,CO,United States
+CUST037585,Vihaan Sharma,Indianapolis,IN,India
+CUST039566,Neha Mehta,Jacksonville,FL,United Kingdom
+CUST032406,Mohit Singh,Washington,DC,United States
+CUST006673,Sunita Reddy,Washington,DC,United States
+CUST009117,Sneha Reddy,Chicago,IL,United States
+CUST020976,Sahil Patel,Denver,CO,United States
+CUST039664,Aditya Mehta,Charlotte,NC,Canada
+CUST016159,Vivaan Mehta,New York,NY,India
+CUST018490,Aarav Joshi,Houston,TX,United States
+CUST000529,Aditya Patel,Chicago,IL,Australia
+CUST041592,Ritika Mehta,New York,NY,United States
+CUST025111,Ritika Mehta,Houston,TX,United States
+CUST020962,Karan Gupta,Columbus,OH,United States
+CUST019154,Vihaan Mehta,San Antonio,TX,United States
+CUST008405,Aarav Patel,Houston,TX,India
+CUST002196,Mohit Kapoor,Jacksonville,FL,United States
+CUST022788,Simran Patel,San Francisco,CA,Canada
+CUST020811,Aditya Mehta,Dallas,TX,United States
+CUST036913,Vihaan Kumar,Phoenix,AZ,United Kingdom
+CUST023917,Karan Kapoor,Washington,DC,United States
+CUST049946,Sunita Reddy,Dallas,TX,United States
+CUST037369,Aditya Mehta,Washington,DC,India
+CUST027164,Priya Patel,Chicago,IL,United States
+CUST035635,Sneha Patel,Fort Worth,TX,United States
+CUST033448,Mohit Verma,Columbus,OH,India
+CUST022565,Aman Verma,Columbus,OH,United States
+CUST010986,Aman Reddy,Washington,DC,United States
+CUST015343,Rohit Patel,San Jose,CA,Australia
+CUST017587,Vikas Singh,Washington,DC,United States
+CUST008249,Sneha Verma,Chicago,IL,United States
+CUST024297,Arjun Gupta,Austin,TX,United States
+CUST043504,Rohit Singh,New York,NY,United States
+CUST033352,Kabir Singh,Austin,TX,United States
+CUST036031,Aditya Singh,Columbus,OH,United States
+CUST042892,Neha Joshi,Indianapolis,IN,United States
+CUST005231,Ritika Kapoor,Columbus,OH,India
+CUST048475,Simran Kapoor,San Antonio,TX,United States
+CUST002611,Kabir Patel,Indianapolis,IN,Canada
+CUST010990,Anjali Singh,Phoenix,AZ,Australia
+CUST009099,Simran Verma,San Antonio,TX,India
+CUST035974,Neha Joshi,Dallas,TX,United States
+CUST042892,Priya Gupta,Chicago,IL,United States
+CUST002002,Ritika Sharma,Fort Worth,TX,United States
+CUST034073,Vikas Reddy,Dallas,TX,United Kingdom
+CUST038114,Aditya Gupta,Chicago,IL,United States
+CUST008122,Simran Joshi,San Antonio,TX,United States
+CUST002640,Vivaan Sharma,Chicago,IL,India
+CUST011556,Vikas Gupta,Chicago,IL,India
+CUST003093,Aditya Verma,Dallas,TX,United States
+CUST021844,Kabir Kapoor,Los Angeles,CA,India
+CUST034364,Aman Mehta,Houston,TX,India
+CUST037738,Simran Kapoor,Charlotte,NC,United States
+CUST008946,Sahil Sharma,Jacksonville,FL,United States
+CUST041406,Simran Kapoor,Charlotte,NC,United States
+CUST047483,Rohit Patel,San Antonio,TX,United States
+CUST037259,Kabir Joshi,Austin,TX,Canada
+CUST036430,Aman Singh,Philadelphia,PA,United States
+CUST038244,Vivaan Joshi,San Diego,CA,India
+CUST000643,Vihaan Patel,Jacksonville,FL,India
+CUST027065,Aditya Reddy,Indianapolis,IN,United States
+CUST020694,Mohit Sharma,New York,NY,United States
+CUST020608,Sneha Joshi,San Diego,CA,India
+CUST018027,Simran Reddy,Jacksonville,FL,United States
+CUST013765,Aman Kapoor,Los Angeles,CA,United States
+CUST045762,Mohit Patel,Austin,TX,United States
+CUST011582,Vikas Gupta,Dallas,TX,India
+CUST043065,Sunita Mehta,Chicago,IL,United States
+CUST037250,Anjali Kapoor,Los Angeles,CA,United States
+CUST020325,Vivaan Patel,Philadelphia,PA,India
+CUST005907,Aditya Patel,Chicago,IL,India
+CUST013629,Vihaan Reddy,Houston,TX,United States
+CUST002565,Sunita Gupta,San Diego,CA,United States
+CUST048794,Pooja Kapoor,Dallas,TX,India
+CUST003091,Arjun Patel,Houston,TX,United States
+CUST009247,Aditya Kapoor,Austin,TX,United States
+CUST028627,Arjun Patel,Denver,CO,India
+CUST001515,Priya Mehta,Austin,TX,United States
+CUST045996,Arjun Kapoor,Seattle,WA,India
+CUST048787,Aditya Gupta,Seattle,WA,India
+CUST007018,Sahil Mehta,Columbus,OH,United States
+CUST018257,Anjali Singh,Washington,DC,United Kingdom
+CUST041379,Aman Verma,Phoenix,AZ,India
+CUST016218,Karan Reddy,Columbus,OH,United Kingdom
+CUST038261,Vikas Sharma,Los Angeles,CA,United States
+CUST019069,Vikas Gupta,Phoenix,AZ,United States

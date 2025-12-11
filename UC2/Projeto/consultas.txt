@@ -1,0 +1,77 @@
+************ 'Primeira Query' ************
+
+select orders.OrderID,
+orders.OrderDate,
+products.ProductName,
+orders.TotalAmount
+from orders
+join products on
+products.ProductID = orders.ProductID
+where orders.TotalAmount > 100
+order by TotalAmount
+
+************ 'Segunda Query' ************
+
+select customers.CustomerName,
+orders.OrderDate,
+products.Category,
+products.ProductName,
+customers.city
+from products
+join orders on
+products.ProductID = orders.ProductID
+join customers on
+orders.CustomerID = customers.CustomerID
+where customers.city = 'New York'
+
+************ 'Terceira Query' ************
+
+select customers.CustomerName,
+orders.OrderDate,
+products.ProductName,
+orders.PaymentMethod,
+orders.TotalAmount
+from products
+join orders on
+products.ProductID = orders.ProductID
+join customers on
+orders.CustomerID = customers.CustomerID
+where orders.TotalAmount > 1000
+
+************ 'Quarta Query' ************
+
+SELECT 
+    customers.CustomerName,
+    customers.City,
+    customers.State,
+    customers.Country,
+    Sum(orders.TotalAmount) AS TotalPedidos
+FROM customers
+JOIN orders ON orders.CustomerID = customers.CustomerID
+WHERE YEAR(orders.OrderDate) >= 2000  -- Filtra pedidos a partir de 2024
+GROUP BY 
+    customers.CustomerID,
+    customers.CustomerName,
+    customers.City,
+    customers.State,
+    customers.Country
+ORDER BY TotalPedidos DESC
+
+************ 'Quinta Query' ************
+
+SELECT 
+    customers.CustomerName,
+    customers.City,
+    customers.State,
+    customers.Country,
+    Sum(orders.TotalAmount) AS TotalPedidos
+FROM customers
+JOIN orders ON orders.CustomerID = customers.CustomerID
+WHERE YEAR(orders.OrderDate) >= 2000  -- Filtra pedidos a partir de 2024
+GROUP BY 
+    customers.CustomerID,
+    customers.CustomerName,
+    customers.City,
+    customers.State,
+    customers.Country
+ORDER BY TotalPedidos DESC
